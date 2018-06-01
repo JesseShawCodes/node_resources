@@ -25,3 +25,15 @@ https://expressjs.com/en/guide/using-middleware.html#middleware.application
 https://expressjs.com/en/guide/behind-proxies
 
 ![Proxies](/public/proxies.png "Title is optional")
+
+## Security
+
+*Always keep up to date and secured dependencies
+*Use Transport Layor Security (TLS) for sensitive data
+*Use Helmet's collection of security middleware
+*Use cookies securely
+*Take a look at the Node security checklist and stay informed of known issues
+
+## Version
+
+https://semver.org/
