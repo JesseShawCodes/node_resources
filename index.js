@@ -2,17 +2,38 @@ var express = require('express');
 var app = express();
 var PORT = 3000;
 var data = require('./data/data.json')
+var path = require('path')
 
 //this is the public folder on path images
-app.use(express.static('public'))
+app.use(express.static('public'));
+
+// method to use JSON
+// app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+//Proxies
+app.set('trust proxy', 'loopback');
 
 //this is for images folder on path images
 app.use('/images', express.static('images'))
+
 
 app.get("/", (req, res)=>
     // get data
     res.json(data)
 );
+
+//JSON data
+//{"Hello": "JSON is cool"}
+//URL Encoded DATA
+// hello=URLEncoded+is+cool
+
+app.post("/newItem", (req, res)=>{
+    console.log(req.body);
+    res.send(req.body);
+})
+
+//Middleware Example
 
 app.get("/item/:id", (req, res, next)=>{
     //This is the middleware that pulls data
@@ -49,6 +70,7 @@ app.delete('/deleteit', (req, res)=>
 /*Chaining */
 
 app.route('/chain').get((req, res) => {
+    throw new Error();
     res.send("A get request was made");
 }).put((req, res) => {
     res.send("A Put Request was made")
@@ -56,6 +78,12 @@ app.route('/chain').get((req, res) => {
 }).delete((req, res) => {
     res.send("A Delete Request was made")
     console.log("Delete It")  
+})
+
+/*Error Handling function */
+app.use((err, req, res, next) =>{
+    console.error(err.stack);
+    res.status(500).send(`Red alert!!Red alert!!: ${err.stack}`)
 })
 
 /*PORT */
