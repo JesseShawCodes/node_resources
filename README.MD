@@ -1,5 +1,14 @@
 # NODE Resources
 
+## Multi-Threaded vs. Single-Threaded
+
+Multi-threaded: Async
+Single-threaded: Sync
+
+Node.js is Multi-threaded
+
+https://dzone.com/articles/multi-threaded-application-vs
+
 ## Response Methods
 
 ![res_methods](/public/res_methods.png "Title is optional")
@@ -7,6 +16,10 @@
 ## Chaining
 
 ![chaining](/public/chaining.png "Title is optional")
+
+## Types of Dependencies
+
+*Dev Dependencies are used for developer workflow. 
 
 ## Middleware
 
@@ -34,6 +47,12 @@ https://expressjs.com/en/guide/behind-proxies
 *Use cookies securely
 *Take a look at the Node security checklist and stay informed of known issues
 
+
 ## Version
 
 https://semver.org/
+
+## SPDX License List
+
+https://spdx.org/licenses/
+
