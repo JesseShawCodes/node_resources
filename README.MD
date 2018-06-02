@@ -1,5 +1,22 @@
 # NODE Resources
 
+## Global Objects
+![global_methods](/public/global.png "Title is optional")
+
+
+//Simple NodeJs Tests
+var hello ="Hello world from Node JS"
+var justNode = hello.slice(17)
+console.log(`Rock on World from ${justNode}`);
+console.log(__dirname);
+console.log(__filename);
+
+var path = require('path')
+console.log(`Rock on World from ${path.basename(__filename)}`);
+
+## Node.js Process
+https://nodejs.org/api/process.html#process_process
+
 ## Multi-Threaded vs. Single-Threaded
 
 Multi-threaded: Async
@@ -47,6 +64,9 @@ https://expressjs.com/en/guide/behind-proxies
 *Use cookies securely
 *Take a look at the Node security checklist and stay informed of known issues
 
+## Mock Data Resources 
+
+https://mockaroo.com/
 
 ## Version
 

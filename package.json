@@ -16,6 +16,7 @@
   "dependencies": {
     "express": "^4.16.3",
     "nodemon": "^1.17.5",
+    "npm": "^6.1.0",
     "serve-favicon": "^2.5.0"
   },
   "devDependencies": {

@@ -2,7 +2,18 @@ var express = require('express');
 var app = express();
 var PORT = 3000;
 var data = require('./data/data.json')
+
+//Simple NodeJs Tests
+var hello ="Hello world from Node JS"
+var justNode = hello.slice(17)
+//console.log(`Rock on World from ${justNode}`);
+//console.log(__dirname);
+//console.log(__filename);
+
 var path = require('path')
+// console.log(`Rock on World from ${path.basename(__filename)}`);
+
+
 
 //this is the public folder on path images
 app.use(express.static('public'));
@@ -85,6 +96,7 @@ app.use((err, req, res, next) =>{
     console.error(err.stack);
     res.status(500).send(`Red alert!!Red alert!!: ${err.stack}`)
 })
+
 
 /*PORT */
 app.listen(PORT, ()=>{
