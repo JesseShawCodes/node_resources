@@ -14,6 +14,28 @@ console.log(__filename);
 var path = require('path')
 console.log(`Rock on World from ${path.basename(__filename)}`);
 
+## Node.JS Modules
+
+https://nodejs.org/api/modules.html
+
+## Node.Js Core Modules
+
+https://nodejs.org/api/modules.html#modules_core_modules
+
+## Node.Js Event Emitter
+
+https://nodejs.org/api/events.html#events_class_eventemitter
+
+## Node.Js Child Process
+
+https://nodejs.org/api/child_process.html
+
+## Node.Js File System
+https://nodejs.org/api/fs.html
+![res_methods](/public/readfiles.png "Title is optional")
+
+
+
 ## Node.js Process
 https://nodejs.org/api/process.html#process_process
 
@@ -75,4 +97,11 @@ https://semver.org/
 ## SPDX License List
 
 https://spdx.org/licenses/
+
+## Various Excercises
+
+### Global Exercise
+
+![Global](/public/heartbeat.png "Global Exercise")
+
 

@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var PORT = 3000;
-var data = require('./data/data.json')
+var data = require('./data/data.json');
 
 //Simple NodeJs Tests
 var hello ="Hello world from Node JS"
@@ -11,9 +11,26 @@ var justNode = hello.slice(17)
 //console.log(__filename);
 
 var path = require('path')
+console.log(path.basename(__filename))
 // console.log(`Rock on World from ${path.basename(__filename)}`);
 
+//Globals
+/*
+var waittime = 3000;
+var currentTime = 0;
+var waitInterval = 500;
+console.log("Wait for it")
 
+var interval = setInterval( function(){
+    currentTime +=waitInterval;
+    console.log(`waiting ${currentTime/1000} seconds...`)
+}, waitInterval)
+
+setTimeout(function(){
+    clearInterval(interval)
+    console.log("Done")
+}, waittime)
+*/
 
 //this is the public folder on path images
 app.use(express.static('public'));
