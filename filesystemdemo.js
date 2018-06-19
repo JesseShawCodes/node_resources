@@ -1,14 +1,18 @@
 var fs = require('fs')
-//Sync
-var files = fs.readdirSync('./public')
 
-//Async
-fs.readdir('./public', function(err, files){
-    if (err) {
-        throw err
-    }
+var md = `
+    Sample Markdown Title
+    =====================
 
-    console.log(files)
+    Sample subtitle
+    ---------------------
+
+    * point
+    * point
+    * point
+`
+;
+
+fs.writeFile("sample.md", md.trim(), function(err) {
+    console.log("File created")
 })
-
-

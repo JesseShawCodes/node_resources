@@ -90,7 +90,21 @@ https://expressjs.com/en/guide/behind-proxies
 
 https://mockaroo.com/
 
-## Version
+## JSON Web Token
+
+https://jwt.io/
+
+## Frameworks
+### Koa
+https://koajs.com/
+
+### Swagger
+https://swagger.io/
+
+### Loop Back
+http://loopback.io/
+
+## Version Controlling
 
 https://semver.org/
 
