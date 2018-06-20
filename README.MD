@@ -78,6 +78,10 @@ https://expressjs.com/en/guide/behind-proxies
 
 ![Proxies](/public/proxies.png "Title is optional")
 
+## Authentication Sample
+
+https://github.com/JesseShawCodes/nodeAuth
+
 ## Security
 
 *Always keep up to date and secured dependencies
@@ -85,6 +89,20 @@ https://expressjs.com/en/guide/behind-proxies
 *Use Helmet's collection of security middleware
 *Use cookies securely
 *Take a look at the Node security checklist and stay informed of known issues
+
+### Top Five Security Risks
+
+1. Injection Attacks
+2. Broken Authentication
+3. Sensitive data exposure
+4. XML Entities
+5. Broken Access Control
+
+#### Owasp top 10
+
+Open Web Application Security Project
+
+https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project
 
 ## Mock Data Resources 
 
