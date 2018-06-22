@@ -18,6 +18,10 @@ console.log(`Rock on World from ${path.basename(__filename)}`);
 
 https://nodejs.org/api/modules.html
 
+## Node Packages
+
+https://www.npmjs.com/
+
 ## Node.Js Core Modules
 
 https://nodejs.org/api/modules.html#modules_core_modules
