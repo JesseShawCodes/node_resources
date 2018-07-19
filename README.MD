@@ -144,4 +144,14 @@ https://spdx.org/licenses/
 
 ![Global](/public/heartbeat.png "Global Exercise")
 
+## Continuous Deployment
+
+### Jenkins
+https://jenkins.io/
+
+### Travis CI
+https://travis-ci.org/
+
+### CircleCI
+https://circleci.com/
 
