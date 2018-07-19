@@ -116,6 +116,10 @@ https://mockaroo.com/
 
 https://jwt.io/
 
+## Sockets
+
+https://socket.io/
+
 ## Frameworks
 ### Koa
 https://koajs.com/
